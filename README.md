@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Auto Agent - 二手车智能平台
 
-## Getting Started
+基于 AI Agent 的二手车行业智能助手平台，提供车辆评估、客户服务、市场分析、车辆检测、交易顾问五大智能 Agent。
 
-First, run the development server:
+## 在线预览
+
+**[https://leij8993-coder.github.io/auto-agent](https://leij8993-coder.github.io/auto-agent)**
+
+## 功能特性
+
+- **5 个专业 Agent** — 车辆评估、客户服务、市场分析、车辆检测、交易顾问
+- **对话历史** — 自动保存会话，切换对话不丢失上下文
+- **知识库** — 内置车型、行情、法规等专业数据
+- **现代 UI** — 玻璃态设计、渐变色彩、流畅动画
+- **可配置 API** — 支持 OpenAI / Anthropic / 自定义 API 接入
+
+## 技术栈
+
+- Next.js 16 + React 19 + TypeScript
+- Tailwind CSS v4
+- OpenAI 兼容 API
+- localStorage 会话持久化
+
+## 快速开始
 
 ```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 访问 http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+在管理后台配置 API Key 后即可开始使用。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 项目结构
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/              # 页面路由
+│   ├── agents/       # 5 个 Agent 对话页
+│   ├── api/agent/    # API 路由
+│   └── admin/        # 管理后台
+├── components/       # ChatInterface + Sidebar
+├── data/             # 知识库 JSON
+├── lib/              # 工具函数 + 会话管理
+└── types/            # TypeScript 类型
+```
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
