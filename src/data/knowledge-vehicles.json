@@ -1,0 +1,17 @@
+[
+  { "id": "v001", "brand": "丰田", "model": "凯美瑞", "year": 2021, "avgPrice": 145000, "depreciation": 0.28, "reliability": 9.2, "popularity": 95 },
+  { "id": "v002", "brand": "本田", "model": "雅阁", "year": 2021, "avgPrice": 138000, "depreciation": 0.27, "reliability": 9.0, "popularity": 92 },
+  { "id": "v003", "brand": "大众", "model": "帕萨特", "year": 2021, "avgPrice": 132000, "depreciation": 0.32, "reliability": 7.8, "popularity": 85 },
+  { "id": "v004", "brand": "奔驰", "model": "C级", "year": 2021, "avgPrice": 215000, "depreciation": 0.38, "reliability": 7.5, "popularity": 88 },
+  { "id": "v005", "brand": "宝马", "model": "3系", "year": 2021, "avgPrice": 208000, "depreciation": 0.37, "reliability": 7.6, "popularity": 90 },
+  { "id": "v006", "brand": "奥迪", "model": "A4L", "year": 2021, "avgPrice": 195000, "depreciation": 0.36, "reliability": 7.4, "popularity": 82 },
+  { "id": "v007", "brand": "特斯拉", "model": "Model 3", "year": 2021, "avgPrice": 165000, "depreciation": 0.42, "reliability": 8.0, "popularity": 93 },
+  { "id": "v008", "brand": "比亚迪", "model": "汉EV", "year": 2022, "avgPrice": 148000, "depreciation": 0.35, "reliability": 8.2, "popularity": 88 },
+  { "id": "v009", "brand": "丰田", "model": "RAV4", "year": 2021, "avgPrice": 155000, "depreciation": 0.25, "reliability": 9.1, "popularity": 90 },
+  { "id": "v010", "brand": "本田", "model": "CR-V", "year": 2021, "avgPrice": 148000, "depreciation": 0.26, "reliability": 8.9, "popularity": 89 },
+  { "id": "v011", "brand": "大众", "model": "途观L", "year": 2021, "avgPrice": 142000, "depreciation": 0.31, "reliability": 7.7, "popularity": 84 },
+  { "id": "v012", "brand": "日产", "model": "轩逸", "year": 2022, "avgPrice": 88000, "depreciation": 0.24, "reliability": 8.5, "popularity": 91 },
+  { "id": "v013", "brand": "别克", "model": "君威", "year": 2021, "avgPrice": 98000, "depreciation": 0.35, "reliability": 7.6, "popularity": 68 },
+  { "id": "v014", "brand": "丰田", "model": "卡罗拉", "year": 2022, "avgPrice": 82000, "depreciation": 0.22, "reliability": 9.3, "popularity": 94 },
+  { "id": "v015", "brand": "保时捷", "model": "Macan", "year": 2020, "avgPrice": 420000, "depreciation": 0.35, "reliability": 7.8, "popularity": 75 }
+]

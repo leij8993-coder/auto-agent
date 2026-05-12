@@ -1,0 +1,31 @@
+{
+  "lastUpdated": "2026-05-12",
+  "overallTrend": "稳中有降",
+  "avgDepreciation": 0.30,
+  "hotBrands": ["丰田", "本田", "比亚迪", "特斯拉", "宝马"],
+  "coldBrands": ["标致", "雪铁龙", "菲亚特", "纳智捷"],
+  "priceRanges": {
+    "5万以下": { "share": "22%", "trend": "持平" },
+    "5-10万": { "share": "35%", "trend": "微降" },
+    "10-20万": { "share": "28%", "trend": "下降" },
+    "20-50万": { "share": "12%", "trend": "下降" },
+    "50万以上": { "share": "3%", "trend": "持平" }
+  },
+  "newEnergyTrend": {
+    "share": "38%",
+    "yoyGrowth": "+12%",
+    "topModels": ["比亚迪秦PLUS", "特斯拉Model 3", "比亚迪汉EV", "小鹏P7", "蔚来ET5"],
+    "batteryWarranty": "主流8年/15万公里"
+  },
+  "seasonalFactors": [
+    { "month": "1-2月", "factor": "淡季，春节前后交易量低" },
+    { "month": "3-5月", "factor": "旺季，春季购车需求旺盛" },
+    { "month": "6-8月", "factor": "淡季，高温影响看车意愿" },
+    { "month": "9-12月", "factor": "旺季，金九银十+年底冲量" }
+  ],
+  "regionalDifferences": {
+    "一线城市": { "avgPremium": "+8%", "notes": "牌照限制推高需求" },
+    "二三线城市": { "avgPremium": "-5%", "notes": "供给充足竞争激烈" },
+    "四五线城市": { "avgPremium": "-10%", "notes": "购买力有限，低价位为主" }
+  }
+}

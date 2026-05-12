@@ -1,0 +1,70 @@
+{
+  "inspectionTemplate": {
+    "name": "二手车标准化检测报告",
+    "sections": [
+      {
+        "id": "exterior",
+        "name": "外观检测",
+        "items": [
+          { "item": "漆面", "method": "漆膜仪测量", "standard": "原厂漆100-150μm，补漆200μm+", "weight": "高" },
+          { "item": "车身间隙", "method": "目测+塞尺", "standard": "间隙均匀，左右对称", "weight": "高" },
+          { "item": "玻璃", "method": "目测", "standard": "生产日期一致，无裂纹", "weight": "中" },
+          { "item": "轮胎", "method": "目测+胎纹尺", "standard": "花纹深度≥1.6mm，生产日期4年内", "weight": "中" },
+          { "item": "钣金", "method": "漆膜仪+目测", "standard": "无钣金修复痕迹", "weight": "高" }
+        ]
+      },
+      {
+        "id": "interior",
+        "name": "内饰检测",
+        "items": [
+          { "item": "座椅", "method": "目测+触感", "standard": "磨损与里程匹配，功能正常", "weight": "中" },
+          { "item": "方向盘", "method": "目测", "standard": "磨损程度与里程一致", "weight": "中" },
+          { "item": "仪表盘", "method": "OBD读取", "standard": "无故障码，里程无异常", "weight": "高" },
+          { "item": "电子设备", "method": "逐一测试", "standard": "所有功能正常工作", "weight": "中" },
+          { "item": "异味/水渍", "method": "嗅觉+目测", "standard": "无霉味，无水渍痕迹", "weight": "高" }
+        ]
+      },
+      {
+        "id": "engine",
+        "name": "发动机舱",
+        "items": [
+          { "item": "启动状态", "method": "冷启动+怠速", "standard": "启动顺畅，怠速稳定600-800rpm", "weight": "高" },
+          { "item": "机油", "method": "油尺+目测", "standard": "液位正常，颜色黄棕，无乳化", "weight": "高" },
+          { "item": "渗漏", "method": "目测+手电", "standard": "无油液渗漏痕迹", "weight": "高" },
+          { "item": "皮带", "method": "目测", "standard": "无裂纹、无老化", "weight": "中" },
+          { "item": "线束", "method": "目测", "standard": "无破损、无改接", "weight": "中" }
+        ]
+      },
+      {
+        "id": "chassis",
+        "name": "底盘检测",
+        "items": [
+          { "item": "悬挂", "method": "举升+按压", "standard": "无异响，减震无渗漏", "weight": "高" },
+          { "item": "排气管", "method": "目测", "standard": "无严重锈蚀，固定良好", "weight": "中" },
+          { "item": "油箱", "method": "目测", "标准": "无变形、无渗漏", "weight": "中" },
+          { "item": "底盘锈蚀", "method": "目测", "standard": "表面浮锈正常，无结构性锈蚀", "weight": "高" },
+          { "item": "转向", "method": "路试", "standard": "无跑偏、无异响", "weight": "高" }
+        ]
+      },
+      {
+        "id": "road_test",
+        "name": "路试检测",
+        "items": [
+          { "item": "加速", "method": "路试", "standard": "加速顺畅，无顿挫", "weight": "高" },
+          { "item": "制动", "method": "路试", "standard": "制动有效，无跑偏，ABS正常", "weight": "高" },
+          { "item": "变速箱", "method": "路试", "standard": "换挡平顺，无打滑异响", "weight": "高" },
+          { "item": "异响", "method": "路试", "standard": "各速段无异常响声", "weight": "中" },
+          { "item": "空调", "method": "路试", "standard": "制冷制热正常", "weight": "低" }
+        ]
+      }
+    ]
+  },
+  "redFlags": [
+    "安全带日期与整车不符（可能换过，暗示事故）",
+    "水箱框架有焊接痕迹（前部碰撞）",
+    "后备箱地板有褶皱（后部碰撞）",
+    "A/B/C柱漆膜值异常（侧面碰撞）",
+    "发动机号有打磨痕迹（涉嫌违法）",
+    "OBD显示里程与实际严重不符（调表车）"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "valuationMethods": [
+    {
+      "name": "重置成本法",
+      "description": "以当前市场条件下重新购置相同车辆的成本为基础，扣除折旧后确定价值",
+      "formula": "评估值 = 重置成本 × 成新率",
+      "applicable": "通用评估方法，适合大多数场景"
+    },
+    {
+      "name": "现行市价法",
+      "description": "参考市场上相同或相似车辆的近期成交价格确定评估值",
+      "formula": "评估值 = 参照物成交价 ± 差异调整",
+      "applicable": "市场活跃车型，有足够交易数据"
+    },
+    {
+      "name": "收益现值法",
+      "description": "将车辆未来预期收益折算为现值确定评估值",
+      "formula": "评估值 = Σ(预期收益 / (1+折现率)^n)",
+      "applicable": "营运车辆、商用车辆"
+    }
+  ],
+  "depreciationStandards": {
+    "first3Years": "每年折旧15%-20%",
+    "year4to6": "每年折旧10%-15%",
+    "year7to10": "每年折旧8%-10%",
+    "over10Years": "每年折旧5%-8%",
+    "mileageFactor": "每1万公里折旧约2%-3%",
+    "conditionGrades": {
+      "A": { "label": "优秀", "deduction": "0%", "description": "无事故，外观内饰如新，机械状态良好" },
+      "B": { "label": "良好", "deduction": "5%-10%", "description": "轻微划痕，无结构性损伤，正常使用痕迹" },
+      "C": { "label": "一般", "deduction": "15%-25%", "description": "有明显使用痕迹，少量补漆，机械正常" },
+      "D": { "label": "较差", "deduction": "30%-50%", "description": "有事故历史，外观损伤，机械需维修" },
+      "E": { "label": "极差", "deduction": "50%以上", "description": "重大事故，泡水，火烧，严重机械故障" }
+    }
+  },
+  "brandPremium": {
+    "日系": { "premium": "+5%-10%", "reason": "可靠性高，保值率强" },
+    "德系豪华": { "premium": "+3%-8%", "reason": "品牌溢价，但维修成本高" },
+    "国产新能源": { "premium": "-5%-10%", "reason": "技术迭代快，电池衰减担忧" },
+    "美系": { "premium": "-5%", "reason": "油耗偏高，保值率偏低" },
+    "法系": { "premium": "-10%-15%", "reason": "市场认可度低，维修不便" }
+  }
+}
